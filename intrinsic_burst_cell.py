@@ -10,7 +10,7 @@ import izhikevich_cells as izh #import the izhikevich_cells as izh
 
 class ibCell(izh.izhCell):
     def __init__(self, stimVal):
-        """ Call the super constructor from the izhCell class and redfine parameter values """
+        """ Call the super constructor from the izhCell class and redfine parameter values needed for the ibCell """
         super().__init__(stimVal)
         self.celltype = "Intrinsically Bursting"
         self.C = 150
